@@ -1,4 +1,4 @@
-@extends('app-template.blade.php')
+@extends('layouts.app')
 @section('content')
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->

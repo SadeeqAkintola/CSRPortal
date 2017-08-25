@@ -93,9 +93,6 @@
 <body>
 
 
-
-
-
 @include('shared.header')
 @include('shared.header-bottom')
 @include('shared.navbar')

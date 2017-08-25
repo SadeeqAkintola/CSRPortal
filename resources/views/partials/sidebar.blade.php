@@ -182,7 +182,7 @@
                     @if ( Auth::user()->role_id != 2)
                         <li><a href="{{ url('/project') }}"><i class="fa fa-plus-square" aria-hidden="true"></i>Enter or Update Data Records</a></li>
                     @endif
-                    <li><a href="{{ url('/project-query') }}"><i class="fa fa-filter" aria-hidden="true"></i>
+                    <li><a href="{{ route('project.query') }}"><i class="fa fa-filter" aria-hidden="true"></i>
                             Query Project Data Records</a></li>
 
                 </ul>
