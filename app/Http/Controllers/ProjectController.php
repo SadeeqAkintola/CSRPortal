@@ -43,8 +43,8 @@ class ProjectController extends Controller
             ->leftJoin('pillars', 'projects.pillar_id', '=', 'pillars.id')
             ->leftJoin('targets', 'projects.target_id', '=', 'targets.id')
             ->select('projects.id', 'companies.company_name', 'division.name','projects.title','pillars.pillar_name as pillar_name','targets.target_name as target_name', 'projects.year', 'projects.community','projects.state', 'projects.cost' )
-            ->orderBy('projects.id', 'desc')
-            ->paginate(10);
+            ->orderBy('projects.id', 'desc')->get();
+//            ->paginate(10);
 
         return view('project/index', ['projects' => $projects]);
     }
@@ -58,8 +58,7 @@ class ProjectController extends Controller
             ->leftJoin('pillars', 'projects.pillar_id', '=', 'pillars.id')
             ->leftJoin('targets', 'projects.target_id', '=', 'targets.id')
             ->select('projects.id', 'companies.company_name', 'division.name','projects.title','pillars.pillar_name as pillar_name','targets.target_name as target_name', 'projects.year', 'projects.community','projects.state', 'projects.cost' )
-            ->orderBy('projects.id', 'desc')
-            ->paginate(10);
+            ->orderBy('projects.id', 'desc')->get();
 
         return view('project/project-query', ['projects' => $projects]);
     }

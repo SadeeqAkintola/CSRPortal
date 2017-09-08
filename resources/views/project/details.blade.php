@@ -102,38 +102,38 @@
 
                                 <div>
                                     <label class="col-md-4 control-label">Address</label>
-                                    <label class=" control-label" style="font-weight: 300">{{ $project->address }}</label>
+                                    <label class=" control-label" style="font-weight: 300">{{ $project->address }}.</label>
                                 </div>
 
                                 <div>
                                     <label class="col-md-4 control-label">Street Name</label>
-                                    <label class=" control-label" style="font-weight: 300">{{ $project->street }}</label>
+                                    <label class=" control-label" style="font-weight: 300">{{ $project->street }}.</label>
                                 </div>
 
                                 <div>
                                     <label class="col-md-4 control-label">State</label>
-                                    <label class=" control-label" style="font-weight: 300">{{ $project->state }}</label>
+                                    <label class=" control-label" style="font-weight: 300">{{ $project->state }}.</label>
                                 </div>
 
                                 <div>
                                     <label class="col-md-4 control-label">Country</label>
-                                    <label class=" control-label" style="font-weight: 300">{{ $project->country }}</label>
+                                    <label class=" control-label" style="font-weight: 300">{{ $project->country }}.</label>
 
                                 </div>
 
                                 <div>
                                     <label class="col-md-4 control-label">Full Location</label>
-                                    <label class=" control-label" style="font-weight: 300">{{ $project->full_location }}</label>
+                                    <label class=" control-label" style="font-weight: 300">{{ $project->full_location }}.</label>
                                 </div>
 
                                 <div>
                                     <label class="col-md-4 control-label">Project Stage</label>
-                                    <label class=" control-label" style="font-weight: 300">{{ $project->project_stage }}</label>
+                                    <label class=" control-label" style="font-weight: 300">{{ $project->project_stage }}.</label>
                                 </div>
 
                                 <div>
                                     <label class="col-md-4 control-label">Comments</label>
-                                    <label class=" control-label" style="font-weight: 300">{{ $project->target_details }}</label>
+                                    <label class=" control-label" style="font-weight: 300">{{ $project->target_details }}.</label>
                                 </div>
 
                                 <div>
@@ -233,6 +233,20 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+
+<script>
+    function seoUrl($string) {
+        //Lower case everything
+        $string = strtolower($string);
+        //Make alphanumeric (removes all other characters)
+        $string = preg_replace("/[^a-z0-9_\s-]/", "", $string);
+        //Clean up multiple dashes or whitespaces
+        $string = preg_replace("/[\s-]+/", " ", $string);
+        //Convert whitespaces and underscore to dash
+        $string = preg_replace("/[\s_]/", "-", $string);
+        return $string;
+    }
+</script>
 
 <script>
     $('.deleteItem').click(function (e) {

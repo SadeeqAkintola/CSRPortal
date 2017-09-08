@@ -11,15 +11,15 @@
                     <table class="table table-bordered table-striped {{ count($projects) > 0 ? 'datatable' : '' }} @can('user_delete')  @endcan">
                         <thead>
                         <tr>
-                            <th>ID</th>
+                            <th width="5%">ID</th>
                             <th>Nigeria Operations</th>
-                            <th>Project Title</th>
-                            <th>Pillar</th>
-                            <th>Target</th>
+                            <th width="25%">Project Title</th>
+                            <th width="15%">Pillar</th>
+                            <th width="23%">Target</th>
                             <th>Year</th>
-                            <th>Community</th>
+                            <th width="15%">Community</th>
                             <th>State</th>
-                            <th>Cost</th>
+                            <th>Cost (N)</th>
 
                             <th class="text-center">  @can('user_create')
                                     <a class="btn btn-success" href="{{ route('project.create') }}" id="Create" title="Create A New Project">
@@ -37,12 +37,13 @@
                                     <td>{{$project->id}}</td>
                                     <td>{{$project->name}}</td>
                                     <td>{{$project->title}}</td>
-                                    <td>{{$project->target_name}}</td>
                                     <td>{{$project->pillar_name}}</td>
+                                    <td>{{$project->target_name}}</td>
                                     <td>{{$project->year}}</td>
                                     <td>{{$project->community}}</td>
                                     <td>{{$project->state}}</td>
-                                    <td>{{$project->cost}}</td>
+                                    <td>{{number_format($project->cost, 2, '.', ',')}}</td>
+
 
 
 

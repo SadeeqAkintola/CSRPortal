@@ -76,3 +76,8 @@ Route::get('avatars/{name}', 'EmployeeManagementController@load');
 
 
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+
+
+Route::get('/reports/report-by-plant', 'ReportByPlantController@highchart')->name('report.plant');
+Route::get('/reports/report-by-year', 'ReportByYearController@highchart')->name('report.year');
+Route::get('/reports/report-by-pillar', 'ReportByPillarController@highchart')->name('report.pillar');

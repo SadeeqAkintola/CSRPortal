@@ -15,143 +15,145 @@
 
 
     <div class="panel panel-default">
+        <form class='filter-form'>
+
+            <table width="1077" border="0" class="well">
+                <tbody>
+                <tr>
+                    <td width="46" height="34"><strong>ID:</strong></td>
+                    <td width="49">
+                        <strong>
+                            <input type='text' value='' class='filter' data-column-index='0' size="6">
+                        </strong>
+                    </td>
+                    <td width="174"><strong>Nigeria Operations:</strong></td>
+                    <td width="181">
+                        <strong>
+                            <select id="NigeriaOperations" class='filter' data-column-index='1'>
+                                <option value=""></option>
+                                <option value="Ashaka">Ashaka</option>
+                                <option value="Atlas">Atlas</option>
+                                <option value="Corporate">Corporate</option>
+                                <option value="Ewekoro">Ewekoro</option>
+                                <option value="Mfamosing">Mfamosing </option>
+                                <option value="ReadyMix">ReadyMix</option>
+                                <option value="Sagamu">Sagamu</option>
+
+                            </select>
+                        </strong>
+                    </td>
+                    <td width="101"><strong>Pillar:</strong></td>
+                    <td width="205">
+                        <strong>
+                            <select id="Pillar" class='filter' data-column-index='3'>
+                                <option value=""></option>
+                                <option value="Circular Economy">Circular Economy</option>
+                                <option value="Climate">Climate</option>
+                                <option value="People and Communities">People and Communities </option>
+                                <option value="Water and Nature">Water and Nature</option>
+                            </select>
+                        </strong>
+                    </td>
+                    <td width="51" rowspan="2"><strong>Year:</strong></td>
+                    <td width="78">
+                        <strong>
+                            <input type="text" id="min" name="min" placeholder="From" size="6">
+                        </strong>
+                    </td>
+                    <td width="39" rowspan="2"><strong>Cost:</strong></td>
+                    <td width="111">
+                        <strong>
+                            <input type="text" id="mincost" name="mincost" placeholder="Min Cost" size="10">
+                        </strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="39"><strong>State:</strong></td>
+                    <td>
+                        <strong>
+                            <input type='text' class='filter' value='' size="6" data-column-index='7'>
+                        </strong>
+                    </td>
+                    <td><strong>Project Title:</strong></td>
+                    <td>
+                        <strong>
+                            <input type='text' value='' class='filter' data-column-index='2'>
+                        </strong>
+                    </td>
+                    <td><strong>Community:</strong></td>
+                    <td>
+                        <strong>
+                            <input type='text' value='' class='filter' data-column-index='6'>
+                        </strong>
+                    </td>
+                    <td>
+                        <strong>
+                            <input type="text" id="max" name="max" placeholder="To" size="6">
+                        </strong>
+                    </td>
+                    <td>
+                        <strong>
+                            <input type="text" id="maxcost" name="maxcost" placeholder="Max Cost" size="10">
+                        </strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="36">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td><strong>Targets:</strong></td>
+                    <td colspan="3">
+                        <strong>
+                            <select id="Targets" class='filter' data-column-index='4'>
+                                <option value=""></option>
+                                <option value="Affordable Housing">Affordable Housing</option>
+                                <option value="Business Conduct">Business Conduct</option>
+                                <option value="Communities">Communities</option>
+                                <option value="CO2 Reduction: Customers">CO2 Reduction: Customers </option>
+                                <option value="CO2 Reduction: Supply Chain and Buildings">CO2 Reduction: Supply Chain and Buildings</option>
+                                <option value="Diversity">Diversity</option>
+
+                                <option value="Energy Use">Energy Use</option>
+                                <option value="Freshwater Withdrawal">Freshwater Withdrawal </option>
+                                <option value="Health & Safety">Health & Safety</option>
+                                <option value="Positive Change on Biodiversity">Positive Change on Biodiversity</option>
+
+                                <option value="Recycle Construction Waste">Recycle Construction Waste</option>
+                                <option value="Safe Water, Sanitation, and Hygiene">Safe Water, Sanitation, and Hygiene </option>
+
+                                <option value="Water Net-Positive">Water Net-Positive</option>
+
+                            </select>
+                        </strong>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                </tbody>
+            </table>
+
+
+
+        </form>
         <div class="panel-heading">
             <h4 class="page-title text-center">Query Project Data Records</h4>
 
-            <form class='filter-form'>
 
-                <table width="1077" border="0" class="well">
-                    <tbody>
-                    <tr>
-                        <td width="46" height="34"><strong>ID:</strong></td>
-                        <td width="49">
-                            <strong>
-                                <input type='text' value='' class='filter' data-column-index='0' size="6">
-                            </strong>
-                        </td>
-                        <td width="174"><strong>Nigeria Operations:</strong></td>
-                        <td width="181">
-                            <strong>
-                                <select id="NigeriaOperations" class='filter' data-column-index='1'>
-                                    <option value=""></option>
-                                    <option value="Ashaka">Ashaka</option>
-                                    <option value="Atlas">Atlas</option>
-                                    <option value="Ewekoro">Ewekoro</option>
-                                    <option value="Mfamosing">Mfamosing </option>
-                                    <option value="ReadyMix">ReadyMix</option>
-                                    <option value="Sagamu">Sagamu</option>
-
-                                </select>
-                            </strong>
-                        </td>
-                        <td width="101"><strong>Pillar:</strong></td>
-                        <td width="205">
-                            <strong>
-                                <select id="Pillar" class='filter' data-column-index='3'>
-                                    <option value=""></option>
-                                    <option value="Circular Economy">Circular Economy</option>
-                                    <option value="Climate">Climate</option>
-                                    <option value="People and Communities">People and Communities </option>
-                                    <option value="Water and Nature">Water and Nature</option>
-                                </select>
-                            </strong>
-                        </td>
-                        <td width="51" rowspan="2"><strong>Year:</strong></td>
-                        <td width="78">
-                            <strong>
-                                <input type="text" id="min" name="min" placeholder="From" size="6">
-                            </strong>
-                        </td>
-                        <td width="39" rowspan="2"><strong>Cost:</strong></td>
-                        <td width="111">
-                            <strong>
-                                <input type="text" id="mincost" name="mincost" placeholder="Min Cost" size="10">
-                            </strong>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="39"><strong>State:</strong></td>
-                        <td>
-                            <strong>
-                                <input type='text' class='filter' value='' size="6" data-column-index='7'>
-                            </strong>
-                        </td>
-                        <td><strong>Project Title:</strong></td>
-                        <td>
-                            <strong>
-                                <input type='text' value='' class='filter' data-column-index='2'>
-                            </strong>
-                        </td>
-                        <td><strong>Community:</strong></td>
-                        <td>
-                            <strong>
-                                <input type='text' value='' class='filter' data-column-index='6'>
-                            </strong>
-                        </td>
-                        <td>
-                            <strong>
-                                <input type="text" id="max" name="max" placeholder="To" size="6">
-                            </strong>
-                        </td>
-                        <td>
-                            <strong>
-                                <input type="text" id="maxcost" name="maxcost" placeholder="Max Cost" size="10">
-                            </strong>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="36">&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td><strong>Targets:</strong></td>
-                        <td colspan="3">
-                            <strong>
-                                <select id="Targets" class='filter' data-column-index='4'>
-                                    <option value=""></option>
-                                    <option value="Affordable Housing">Affordable Housing</option>
-                                    <option value="Business Conduct">Business Conduct</option>
-                                    <option value="Communities">Communities</option>
-                                    <option value="CO2 Reduction: Customers">CO2 Reduction: Customers </option>
-                                    <option value="CO2 Reduction: Supply Chain and Buildings">CO2 Reduction: Supply Chain and Buildings</option>
-                                    <option value="Diversity">Diversity</option>
-
-                                    <option value="Energy Use">Energy Use</option>
-                                    <option value="Freshwater Withdrawal">Freshwater Withdrawal </option>
-                                    <option value="Health & Safety">Health & Safety</option>
-                                    <option value="Positive Change on Biodiversity">Positive Change on Biodiversity</option>
-
-                                    <option value="Recycle Construction Waste">Recycle Construction Waste</option>
-                                    <option value="Safe Water, Sanitation, and Hygiene">Safe Water, Sanitation, and Hygiene </option>
-
-                                    <option value="Water Net-Positive">Water Net-Positive</option>
-
-                                </select>
-                            </strong>
-                        </td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    </tbody>
-                </table>
-
-
-
-            </form>
 
         <div class="panel-body table-responsive">
             <table id="example" class="table table-bordered table-striped {{ count($projects) > 0 ? 'datatable' : '' }} @can('user_delete')  @endcan">
                 <thead>
                 <tr>
-                    <th>ID</th>
+                    <th width="5%">ID</th>
                     <th>Nigeria Operations</th>
-                    <th>Project Title</th>
-                    <th>Pillar</th>
-                    <th>Target</th>
+                    <th width="25%">Project Title</th>
+                    <th width="15%">Pillar</th>
+                    <th width="20%">Target</th>
                     <th>Year</th>
-                    <th>Community</th>
+                    <th width="20%">Community</th>
                     <th>State</th>
-                    <th>Cost</th>
+                    <th>Cost (N)</th>
 
 
                 </tr>
@@ -164,12 +166,12 @@
                             <td>{{$project->id}}</td>
                             <td>{{$project->name}}</td>
                             <td>{{$project->title}}</td>
-                            <td>{{$project->target_name}}</td>
                             <td>{{$project->pillar_name}}</td>
+                            <td>{{$project->target_name}}</td>
                             <td>{{$project->year}}</td>
                             <td>{{$project->community}}</td>
                             <td>{{$project->state}}</td>
-                            <td>{{$project->cost}}</td>
+                            <td>{{number_format($project->cost, 2, '.', ',')}}</td>
                         </tr>
                     @endforeach
                 @else

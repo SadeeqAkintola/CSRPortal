@@ -197,9 +197,9 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{ url('system-management/department') }}"><i class="fa fa-line-chart" aria-hidden="true"></i>By Plant</a></li>
-                    <li><a href="{{ url('system-management/division') }}"><i class="fa fa-pie-chart" aria-hidden="true"></i>By Pillar</a></li>
-                    <li><a href="{{ url('system-management/division') }}"><i class="fa fa-bar-chart" aria-hidden="true"></i>By Year</a></li>
+                    <li><a href="{{ route('report.plant') }}"><i class="fa fa-line-chart" aria-hidden="true"></i>By Plant</a></li>
+                    <li><a href="{{ route('report.pillar') }}"><i class="fa fa-pie-chart" aria-hidden="true"></i>By Pillar</a></li>
+                    <li><a href="{{ route('report.year') }}"><i class="fa fa-bar-chart" aria-hidden="true"></i>By Year</a></li>
                 </ul>
             </li>
 
